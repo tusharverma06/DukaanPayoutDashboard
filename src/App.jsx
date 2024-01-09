@@ -14,7 +14,7 @@ function App() {
     <section className='w-full min-h-screen flex-end'>
       <Sidebar isOpen={isOpen} handleToggle={handleToggleMenu} />
 
-      <div className=" h-screen gap-8 flex-col-start bg-[#fafafa] lg:w-[calc(100%-224px)] w-full">
+      <div className=" min-h-screen gap-8 pb-8 flex-col-start bg-[#fafafa] lg:w-[calc(100%-224px)] w-full">
         <Topbar isOpen={isOpen} handleToggle={handleToggleMenu} />
         <Overview />
       </div>
