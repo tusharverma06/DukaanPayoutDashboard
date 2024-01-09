@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Epilogue:wght@400;500&family=Instrument+Sans&family=Inter:wght@400;600&family=Open+Sans&family=Poppins&family=Space+Grotesk&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-Inter {
+  font-family: "Inter";
+}
+
+@font-face {
+  font-family: "Galano Grotesque";
+  src: url("./fonts/GalanoGrotesque.otf");
+  font-weight: 100 900;
+}
+
+.font-Galano {
+  font-family: "Galano Grotesque";
+}
+
+/* scrollbar for navlinks */
+.navlinks::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.navlinks::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: all 300ms linear;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Flex Utilities being used in basic layouts and flex boxes */
+.flex-start {
+  @apply flex items-center justify-start;
+}
+
+.flex-end {
+  @apply flex items-center justify-end;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.flex-around {
+  @apply flex items-center justify-around;
+}
+
+.flex-evenly {
+  @apply flex items-center justify-evenly;
+}
+
+/* Flex Column Utilities */
+.flex-col-start {
+  @apply flex flex-col items-center justify-start;
+}
+
+.flex-col-end {
+  @apply flex flex-col items-center justify-end;
+}
+
+.flex-col-center {
+  @apply flex flex-col items-center justify-center;
+}
+.flex-col-between {
+  @apply flex flex-col items-center justify-between;
+}
